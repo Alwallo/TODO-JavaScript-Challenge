@@ -19,4 +19,15 @@ btnAgregar.addEventListener('click', (event) => {
 
   tareas.appendChild(newLista);
   inputTarea.value = '';
+  removeLista();
 });
+
+const removeLista = () => {
+  const trashIcons = document.querySelectorAll('.trashIcon');
+  trashIcons.forEach(icono => {
+    icono.addEventListener('click', () => {
+      icono.parentNode.remove();
+    });
+  });
+}
+removeLista();
