@@ -101,10 +101,6 @@ form {
   color: rgba(62, 161, 219, 1);
 }
 
-.completeIcon {
-  color: rgba(62, 161, 219, 1);
-}
-
 .trashIcon:hover {
   color: #f00;
 }
@@ -124,4 +120,9 @@ form {
 
 .noTasks {
   font-size: 48px;
+}
+
+.completedTask{
+  color: gray;
+  text-decoration: line-through;
 }
